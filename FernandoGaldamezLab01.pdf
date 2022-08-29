@@ -1,0 +1,74 @@
+Alumno: Fernando Jose Galdamez Mendoza 00120520.
+Comando para instalar GPG
+ 
+Respuesta del comando.
+ 
+Generacion de claves
+Se seleciono la opcion 1 RSA para generar la clave para firma y RSA para el par de claves pública y privada.
+Se digito 3072 bits para las llaves
+Se coloco 0 para la expiracion de las llaves
+ 
+Se digito el Nombre, correo y comentario.
+ 
+Frase: Guia#01DeSED
+Se completo la creacion de llaves.
+ 
+pub   rsa3072 2022-08-29 [SC]
+      E4BCB532CB60C7D6363330876A86CF5ABA342D9D
+uid                      Fernando Jose Galdamez Mendoza (GNuPGP Guide - For UCA in SED) <00120520@uca.edu.sv>
+sub   rsa3072 2022-08-29 [E]
+-------------------------------------------------------------------------------------------------------------------
+Listado de llaves publicas y ocultas.
+ 
+Exportar claves
+ 
+Exportar claves privadas
+gpg --export-secret-keys --armor XXXXXXXX > ./my-priv-gpg-key.asc
+ 
+Importar claves
+ 
+ 
+Verificacion de Miguel:
+ 
+Verificacion Nestor:
+ 
+Lista de llaves:
+ 
+Sistemas de cifrado
+Cifrado simétrico
+ejercicio:
+ 
+Frase: Contrase;a123
+Contra: LacontraEs02123
+ 
+Cifrado asimétrico
+ 
+ 
+Creación y verificación de firmas digitales
+Firma con el comando: gpg --output FernandoFirma.sig --sign FernandoFirma.gpg
+ 
+ 
+
+Firma con el comando: gpg --clear-sign doc
+ 
+ 
+Firma con el comando gpg --output doc.sig --detach-sig doc
+ 
+Nombre del archivo para cifrar: FirmaFernandoGaldamez.txt.gpg
+
+Preguntas:
+¿Cuál es el punto más devil de PGP?
+EL usuario y la contraseña a utilizar.
+
+¿Cuándo es conveniente utilizar solamente cifrado simétrico?
+El uso de una frase o contraseña ya que esta se utiliza para obtener el desifrado y esta se puede obtener mediante fuerza bruta.
+
+
+
+
+
+
+
+
+
+
