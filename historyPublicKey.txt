@@ -1,0 +1,44 @@
+    1  su -
+    2  sudo apt instal git 
+    3  sudo apt install git 
+    4  clear
+    5  sudo apt install gnupg
+    6  gpg --full-generate-key
+    7  gpg --output my_revocation_certificate.asc --gen-revoke E4BCB532CB60C7D6363330876A86CF5ABA342D9D
+    8  gpg --list-keys
+    9  clear
+   10  gpg --list-keys
+   11  gpg --list-secret-keys
+   12  gpg --output FernandoGaldamez.gpg --export 00120520@uca.edu.sv
+   13  gpg --armor --export 00120520@uca.edu.sv
+   14  gpg --export-secret-keys --armor XXXXXXXX > ./my-priv-gpg-key.asc
+   15  gpg --export-secret-keys --armor 00120520@uca.edu.sv > ./my-priv-gpg-keyFernandoGaldamez.asc
+   16  cd 
+   17  cd /dowload
+   18  ls
+   19  cd Desktop
+   20  ls
+   21  nano Nestor.gpg
+   22  cd
+   23  gpg --import ~/Desktop/Nestor.gpg 
+   24  gpg --list-keys
+   25  cd Desktop
+   26  ls
+   27  nano miguel.gpg 
+   28  cd
+   29  ls
+   30  clear
+   31  gpg --import ~/Desktop/miguel.gpg
+   32  gpg --list-keys
+   33  gpg --edit-key 00087518@uca.edu.sv
+   34  clear
+   35  gpg --edit-key  naldana@uca.edu.sv
+   36  clear
+   37  gpg --list-key
+   38  clear
+   39  history > history.txt
+   40  cat history.txt
+   41  gpg --output history.txt.gpg --symmetric history.txt
+   42  cat history.txt.gpg
+   43  clear
+   44  history > historyPublicKey.txt
